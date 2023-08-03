@@ -4,8 +4,16 @@ import players from "./players";
 import "./PlayersList.css";
 
 const PlayersList = () => {
+  const styleObject = {
+    width: "60rem",
+    height: "55vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    border: "2px solid red",
+  };
   return (
-    <div className="player-list">
+    <div style={styleObject}>
       {/* {players.map((player) => (
         <Player
           name={player.name}
